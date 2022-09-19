@@ -1599,6 +1599,7 @@ input, select, textarea {
 
 		.box footer ul.actions {
 			margin-bottom: 0;
+			text-align: center;
 		}
 
 /* Button */
@@ -2923,4 +2924,9 @@ input, select, textarea {
 				padding: 40px 0 20px 0;
 			}
 
+	}
+
+	/* custom */
+	.center {
+		text-align: center;
 	}
