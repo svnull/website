@@ -51,10 +51,28 @@
 				<div class="container">
 
 					<!-- Content -->
-						<article class="box post">
-							<header class="center">
-								<h2>Coming soon!</h2>
+						<article class="box post || center">
+							<header class>
+								<h2>Stuur een bericht</h2>
 							</header>
+
+							<form action="https://formsubmit.co/mjak@student.che.nl" method="POST">
+								<input type="hidden" name="_next" value="https://svnull.nl/bedankt">
+								<input type="hidden" name="_subject" value="Contactform website">
+								
+								<input type="hidden" name="_template" value="box">
+								<input type="text" name="_honey" style="display:none">
+								<input type="hidden" name="_captcha" value="false">
+
+								<input type="text" name="Voor- en achternaam" placeholder="Voor- en achternaam" required>
+								<input type="email" name="Email adres" placeholder="Email adres" required>
+								<textarea rows="1" name="Bericht" placeholder="Uw bericht" required></textarea>
+								
+								<br>
+								<button type="submit" class="button large">Versturen</button>
+							</form>
+
+						</article>
 				</div>
 			</section>
 
