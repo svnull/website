@@ -15,8 +15,8 @@ class MyFooter extends HTMLElement{
 
 						<div id="copyright">
 							<ul class="links">
-								<li><a href="privacy&cookies.html">Privacy & Cookies</a></li>
-								<li><a href="statuten.html">Statuten</a></li>
+								<li><a href="privacy&cookies">Privacy & Cookies</a></li>
+								<li><a href="statuten">Statuten</a></li>
 							</ul>
 						</div>
 					</div>
@@ -29,19 +29,3 @@ class MyFooter extends HTMLElement{
 }
 
 customElements.define('my-footer', MyFooter)
-
-
-
-// Every repeatable thing in the head portion of each page.
-class MyHeadinfo extends HTMLElement{
-	connectedCallback() {
-		this.innerHTML = `
-		
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		`
-	}
-}
-
-customElements.define('my-headinfo', MyHeadinfo)
