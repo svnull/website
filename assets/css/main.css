@@ -1450,6 +1450,7 @@ input, select, textarea {
 	form input[type=text],
 	form input[type=email],
 	form input[type=password],
+	form input[type=date],
 	form select,
 	form textarea {
 		-webkit-appearance: none;
