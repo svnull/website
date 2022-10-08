@@ -51,10 +51,46 @@
 				<div class="container">
 
 					<!-- Content -->
-						<article class="box post">
-							<header class="center">
-								<h2>Coming soon!</h2>
+						<article class="box post || center">
+							<header class>
+								<h2>Word jij lid van S.V.NULL?</h2>
+								<p>
+									Vul hier je gegevens in en wordt lid. Per kalenderjaar is er een contributie van 25 euro. 
+									<br>
+									(Vanwege late doorstart in het eerste semester betreffen de kosten voor dit kalenderjaar 20 euro.)
+								</p>
 							</header>
+
+							<!-- Voor het verwerken van de emails is de site formsubmit gebruikt -->
+							<form action="https://formsubmit.co/svnull@che.nl" method="POST">
+								<input type="hidden" name="_next" value="https://svnull.nl/bedankt">
+								<input type="hidden" name="_subject" value="Nieuw Lid vanaf website">
+								
+								<input type="hidden" name="_template" value="box">
+								<input type="text" name="_honey" style="display:none">
+								<input type="hidden" name="_captcha" value="false">
+
+								<input type="text" name="Voor- en achternaam" placeholder="Voor- en achternaam" required>
+								<input type="text" name="Geboortedatum" placeholder="Geboortedatum" onfocus="(this.type='date')" onblur="(this.type='text')">
+								<input type="text" name="Straatnaam" placeholder="Straatnaam" required >
+								<input type="text" name="Huisnummer" placeholder="Huisnummer" required>
+								<input type="text" name="Postcode" placeholder="Postcode" required min="6" max="6">
+								<input type="text" name="Woonplaats" placeholder="Woonplaats" required>
+								<input type="email" name="Email adres" placeholder="Email adres" required>
+								<input type="text" name="Studentnummer" placeholder="Studentnummer" required>
+								<input type="text" name="telefoonnummer" placeholder="Telefoonnummer" required>
+								<select name="Studiejaar" placeholder="Studiejaar">
+									<option value="" disabled selected hidden>Hoeveelste jaars ben je?</option>
+									<option value="1e Jaars">1e Jaars</option>
+									<option value="2e Jaars">2e Jaars</option>
+									<option value="3e Jaars">3e Jaars</option>
+									<option value="4e Jaars">4e Jaars</option>
+								</select>
+								  <br>
+								<button type="submit" class="button large">Versturen</button>
+							</form>
+
+						</article>
 				</div>
 			</section>
 
