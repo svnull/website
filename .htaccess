@@ -3,3 +3,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteCond %{REQUEST_URI} ^(.+)\.html$
 RewriteRule (.*)\.html$ /$1 [R=301,L]
+
+## 404 error (page not found) redirects
+ErrorDocument 404 /404.html
