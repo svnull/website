@@ -9,4 +9,4 @@ ErrorDocument 404 /404.html
 
 ## ledenpagina-protected alleen toegankelijk vanaf ledenpagina
 RewriteCond %{HTTP_REFERER} !^https://svnull.nl/ledenpagina$
-RewriteRule ledenpagina-protected.html - [F,NC]
+RewriteRule ledenpagina-protected - [F,NC]
