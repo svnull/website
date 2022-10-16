@@ -63,6 +63,15 @@
 
 })(jQuery);
 
+// Log in also work with enter key 
+var input = document.getElementById("ledenlogin");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("ledenloginbutton").click();
+  }
+});
+
 
 // password
 function pswd(form) {
