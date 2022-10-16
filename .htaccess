@@ -14,10 +14,7 @@ AuthType Basic
 AuthUserFile /.htpasswd
 Require valid-user
 </Files> -->
-AuthUserFile /.htpasswd
-AuthBasicProvider file
-AuthName "Please Login"
-AuthType Basic
-<Files "ledenpagina-protected.html">
+AuthType Basic 
+AuthName "My Protected Folder" 
+AuthUserFile ./.htpasswd 
 require valid-user
-</Files>
