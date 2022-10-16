@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!$_SESSION['allowed_access']) {
+    header('Location: ledenpagina.html');
+    exit();
+}
+?>
+
 <!DOCTYPE HTML>
 
 <!-- Script for custom voor repeating elements --> 

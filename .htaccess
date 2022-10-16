@@ -8,6 +8,6 @@ RewriteRule (.*)\.html$ /$1 [R=301,L]
 ErrorDocument 404 /404.html
 
 ## ledenpagina-protected alleen toegankelijk vanaf ledenpagina
-RewriteEngine On
+<!-- RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^https://svnull.nl/ledenpagina
-RewriteRule /* https://svnull.nl/ledenpagina-protected [R,L]
+RewriteRule /* https://svnull.nl/ledenpagina-protected [R,L] -->
