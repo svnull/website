@@ -53,12 +53,18 @@
 						<!-- Content -->
 							<article class="box post || center">
 								<header>
-									<h2>Beveiligde pagina</h2>
+									<h2>Log in</h2>
 								</header>
 								<p>
 									Om de ledenpagina te bekijken is een wachtwoord nodig.
 								</p>
-								<a href="ledenpagina-protected" class="button large">Inloggen</a>
+								<section>
+                                        <form name="login">
+                                        <input class="ledenpagina_input" name="pass" size="6" type="password">
+										<br>
+                                        <input value="Inloggen" onclick="pswd(this.form)" type="button">
+                                        </form>
+								</section>
 							</article>
 					</div>
 				</section>
