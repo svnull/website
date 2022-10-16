@@ -6,7 +6,3 @@ RewriteRule (.*)\.html$ /$1 [R=301,L]
 
 ## 404 error (page not found) redirects
 ErrorDocument 404 /404.html
-
-## ledenpagina-protected alleen toegankelijk vanaf ledenpagina
-RewriteCond %{HTTP_REFERER} !^http://127.0.0.1:3000/website/ledenpagina-protected.html$
-RewriteRule ledenpagina-protected.html - [F,NC]
