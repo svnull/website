@@ -62,3 +62,12 @@
 				});
 
 })(jQuery);
+
+
+// password
+function pswd(form) {
+	if (form.pass.value=="helloworld") { 
+	location="https://svnull.nl/ledenpagina-protected" 
+	} 
+	else { alert("Wrong Password") } 
+}
