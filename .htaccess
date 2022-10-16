@@ -8,9 +8,16 @@ RewriteRule (.*)\.html$ /$1 [R=301,L]
 ErrorDocument 404 /404.html
 
 ## Password protection
-<Files ledenpagina-protected.html>
+<!-- <Files ledenpagina-protected.html>
 AuthName "Dialog prompt"
 AuthType Basic
 AuthUserFile /.htpasswd
 Require valid-user
+</Files> -->
+AuthUserFile /.htpasswd
+AuthBasicProvider file
+AuthName "Please Login"
+AuthType Basic
+<Files "ledenpagina-protected.html">
+require valid-user
 </Files>
