@@ -63,11 +63,26 @@
 
 })(jQuery);
 
+// Log in also work with enter key 
+var input = document.getElementById("ledenlogin");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("ledenloginbutton").click();
+  }
+});
+
 
 // password
 function pswd(form) {
 	if (form.pass.value=="helloworld") { 
-	location="https://svnull.nl/ledenpagina-protected" 
+
+		var sessionTimeout = 1;
+		var loginDuration = new Date();
+		loginDuration.setTime(loginDuration.getTime()+(sessionTimeout*60*60*1000));
+		document.cookie = "CrewCentreSession=Valid; "+loginDuration.toGMTString()+"; path=/";
+
+	location="https://svnull.nl/ledenpagina-protected"; 
 	} 
 	else { alert("Wrong Password") } 
-} 
+}
