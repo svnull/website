@@ -16,5 +16,5 @@ Require valid-user
 </Files> -->
 AuthType Basic 
 AuthName "My Protected Folder" 
-AuthUserFile /.htpasswd 
+AuthUserFile /home/.htpasswd 
 require valid-user
