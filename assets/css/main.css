@@ -1450,17 +1450,20 @@ input, select, textarea {
 	form input[type=text],
 	form input[type=email],
 	form input[type=password],
+	form input[type=date],
 	form select,
 	form textarea {
 		-webkit-appearance: none;
 		display: block;
 		border: 0;
 		padding: 0.75em 1em;
-		font-size: 1em;
+		font-size: 1.2em;
 		border-radius: 5px;
 		border: solid 1px #dddddd;
 		background: #fff;
-		width: 100%;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 		form input[type=text]:focus,
@@ -1472,8 +1475,14 @@ input, select, textarea {
 		}
 
 	form textarea {
-		height: 15em;
+		height: 7em;
 	}
+
+	@media only screen and (max-width: 736px) {
+		form textarea {
+			height: 10em;
+		}
+	  }
 
 	form ::-webkit-input-placeholder {
 		color: #555 !important;
@@ -2931,7 +2940,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
-	textarea {
+	.ledenpagina_input {
 		text-align:center;
 		-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
