@@ -6,3 +6,11 @@ RewriteRule (.*)\.html$ /$1 [R=301,L]
 
 ## 404 error (page not found) redirects
 ErrorDocument 404 /404.html
+
+## Password protection
+<Files ledenpagina-protected.html>
+AuthName "Dialog prompt"
+AuthType Basic
+AuthUserFile /.htpasswd
+Require valid-user
+</Files>
