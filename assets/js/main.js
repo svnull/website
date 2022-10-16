@@ -75,7 +75,8 @@ input.addEventListener("keypress", function(event) {
 
 // password
 function pswd(form) {
-	if (form.pass.value=="helloworld") { 
+	var somthing = idk("uryybjbeyq")
+	if (form.pass.value==somthing) { 
 
 		var sessionTimeout = 1;
 		var loginDuration = new Date();
