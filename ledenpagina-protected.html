@@ -59,11 +59,53 @@
 						<!-- Content -->
 							<article class="box post">
 								<header class="center">
-									<h2>JAAAAA HIJ WERKT</h2>
+									<h2>Fotoalbum</h2>
 								</header>
 								<p class="center">
-									Om de ledenpagina te bekijken is een wachtwoord nodig.
-								</p>
+									Op het moment zijn er nog geen foto's
+								</p> 
+							
+								<!-- Slideshow container -->
+								<!-- <p>Evenement 1</p>
+								<div class="slideshow-container">
+								  <div class="mySlides1">
+									<img src="images/Twan.jpeg" class="slide-img">
+								  </div>
+								
+								  <div class="mySlides1">
+									<img src="images/Menno.jpeg" class="slide-img">
+								  </div>
+								
+								  <div class="mySlides1">
+									<img src="images/Kurt.jpeg" class="slide-img">
+								  </div>
+								
+								  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+								  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+								</div>
+								
+								<br>
+								<br>
+								<br>
+								<br>
+
+								<p>Evenement 2</p>
+								<div class="slideshow-container">
+								  <div class="mySlides2">
+									<img src="images/Twan.jpeg" class="slide-img">
+								  </div>
+								
+								  <div class="mySlides2">
+									<img src="images/Twan.jpeg" class="slide-img">
+								  </div>
+								
+								  <div class="mySlides2">
+									<img src="images/Twan.jpeg" class="slide-img">
+								  </div>
+								
+								  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+								  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+								</div> -->
 							</article>
 					</div>
 				</section>
@@ -72,6 +114,29 @@
 			<my-footer></my-footer>
 
 		</div>
+
+		<!-- Fotoalbum slideshow -->
+		<script>
+			let slideIndex = [1,1];
+			let slideId = ["mySlides1", "mySlides2"]
+			showSlides(1, 0);
+			showSlides(1, 1);
+
+			function plusSlides(n, no) {
+			showSlides(slideIndex[no] += n, no);
+			}
+
+			function showSlides(n, no) {
+			let i;
+			let x = document.getElementsByClassName(slideId[no]);
+			if (n > x.length) {slideIndex[no] = 1}    
+			if (n < 1) {slideIndex[no] = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			x[slideIndex[no]-1].style.display = "block";  
+			}
+		</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
