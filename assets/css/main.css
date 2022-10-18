@@ -152,7 +152,7 @@ input, select, textarea {
 	}
 
 	a {
-		color: #DE6B07;
+		color: #F6B32F;
 		text-decoration: underline;
 	}
 
@@ -1624,7 +1624,7 @@ input, select, textarea {
 		cursor: pointer;
 		border: 0;
 		border-radius: 5px;
-		background: #DE6B07;
+		background: #F6B32F;
 		color: #fff !important;
 		font-weight: 700;
 		outline: 0;
@@ -1642,7 +1642,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #faa052;
+			background: #f8c96d;
 		}
 
 		input[type="button"]:active,
@@ -1650,7 +1650,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #f88520;
+			background: #c48f25;
 		}
 
 		input[type="button"].alt,
@@ -1838,7 +1838,7 @@ input, select, textarea {
 			position: absolute;
 			left: 0;
 			top: 1.3em;
-			background-color: #DE6B07;
+			background-color: #F6B32F;
 			height: 3.5em;
 			text-align: center;
 			color: #fff;
@@ -1853,7 +1853,7 @@ input, select, textarea {
 				position: absolute;
 				bottom: 0;
 				right: -1.2em;
-				border-left: solid 1.25em #DE6B07;
+				border-left: solid 1.25em #F6B32F;
 				border-top: solid 1.8em transparent;
 				border-bottom: solid 1.8em transparent;
 			}
@@ -2041,7 +2041,7 @@ input, select, textarea {
 		.icon.featured {
 			position: relative;
 			display: inline-block;
-			background-color: #DE6B07;
+			background-color: #F6B32F;
 			width: 9em;
 			padding: 1.75em 0 0.75em 0;
 			border-top-left-radius: 5px;
@@ -2061,7 +2061,7 @@ input, select, textarea {
 				position: absolute;
 				bottom: -1.95em;
 				left: 0;
-				border-top: solid 2em #DE6B07;
+				border-top: solid 2em #F6B32F;
 				border-left: solid 4.5em transparent;
 				border-right: solid 4.5em transparent;
 			}
@@ -2143,7 +2143,7 @@ input, select, textarea {
 				}
 
 				#nav > ul > li.current > a {
-					background: #DE6B07;
+					background: #F6B32F;
 					color: #fff !important;
 					font-weight: 700;
 				}
@@ -2224,7 +2224,7 @@ input, select, textarea {
 			}
 
 			#banner header p {
-				color: #DE6B07;
+				color: #F6B32F;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
