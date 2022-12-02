@@ -1,5 +1,3 @@
-# Website
+# Website SVNULL
 
-***
-
-Website van de studievereniging NULL.
+Website van de studievereniging NULL :)
