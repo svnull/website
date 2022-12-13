@@ -17,6 +17,7 @@ class MyFooter extends HTMLElement{
 							<ul class="links">
 								<li><a href="statuten">Statuten</a></li>
 								<li><a href="privacy&cookies">Privacy & Cookies</a></li>
+								<li><a href="huisregels">Huisregels</a></li>
 							</ul>
 						</div>
 					</div>
